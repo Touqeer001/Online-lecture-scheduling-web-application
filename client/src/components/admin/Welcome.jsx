@@ -83,12 +83,8 @@ const TopBar = styled.div`
 `;
 
 const Heading = styled.h1`
-  // color: black;
-  // font-size: 25px;
-  // font-weight: bold;
-  // margin-top: 8px;
-  // border-radius: 50%;
-  // border: 5px solid black;
+
+
 
    background-color: black; /* Dodger Blue */
   color: white;

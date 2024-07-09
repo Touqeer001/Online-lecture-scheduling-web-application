@@ -112,14 +112,14 @@ export default function Instructors({ user }) {
             <CardLink
               to={{
                 pathname: `/individualinstructor/${instructor.username}`,
-                state: { instructorUsername: instructor.username }, // Pass username as state
+                state: { instructorUsername: instructor.username }, 
               }}
             >
-              {/* <img src={instructor.profileImage} alt={instructor.username} /> */}
+             
               <div className="card-content">
-                {/* <h2>{instructor.username}</h2> */}
+              
                 <InstructorName>{instructor.username}</InstructorName>
-                {/* <p>{instructor.bio}</p> */}
+             
               </div>
             </CardLink>
           </Card>
