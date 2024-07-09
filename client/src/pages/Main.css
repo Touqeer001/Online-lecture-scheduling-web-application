@@ -1,0 +1,17 @@
+div #image{
+    margin-top:50px;
+    height:65%;
+    width:100%;
+    border-radius: 20px;
+   
+  
+  }
+
+  .register{
+    display: flex;
+    content: center;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    flex-direction: column;
+  }
