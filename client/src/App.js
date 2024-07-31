@@ -10,16 +10,7 @@ import IndividualCourse from "./components/IndividualCourse";
 import IndividualInstructor from "./components/admin/IndividualInstructor";
 export default function App() {
   return (
-    /*
-    I've utilized React Router to manage navigation in our application. The main structure is wrapped in a <BrowserRouter> component, which provides the necessary context for routing. Inside that, I've defined different routes using the <Routes> component.
 
-    For user authentication and entry points, I've set up specific routes:
-
-    Login (/login): When users navigate to '/login', the <Login /> component is rendered, allowing them to log in.
-
-    Register (/register): Similarly, the '/register' route is configured to render the <Register /> component, facilitating user registration.
-
-    Main Page (/): The default route, '/', renders the <Chat /> component. This is the main page where users interact with the chat application.*/
     <BrowserRouter>
       <Routes>
         <Route path="/register" element={<Register />} />

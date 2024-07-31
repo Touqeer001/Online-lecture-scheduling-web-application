@@ -175,13 +175,7 @@ const CoursesAdmin = ({ user }) => {
           onChange={handleChange}
           required
         />
-        <input
-          type="text"
-          name="image"
-          placeholder="Image URL"
-          value={courseData.image}
-          onChange={handleChange}
-        />
+        
         <button type="submit">Add Course</button>
       </Form>
 

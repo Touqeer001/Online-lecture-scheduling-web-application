@@ -8,7 +8,7 @@ import { loginRoute } from "../utils/APIRoutes";
 
 export default function Login() {
   const navigate = useNavigate();
-  const [values, setValues] = useState({ username: "", password: "" });
+  const [values, setValues] = useState({ username: "admin", password: '1234'});
   const toastOptions = {
     position: "bottom-right",
     autoClose: 8000,
@@ -66,32 +66,7 @@ export default function Login() {
 
   return (
     <>
-      {/* <FormContainer>
-        <form action="" onSubmit={(event) => handleSubmit(event)}>
-          <div className="brand">
-            <h1>Course Schedule</h1>
-          </div>
-          <Input
-            type="text"
-            placeholder="Username"
-            name="username"
-            onChange={(e) => handleChange(e)}
-            min="3"
-          />
-          <Input
-            type="password"
-            placeholder="Password"
-            name="password"
-            onChange={(e) => handleChange(e)}
-          />
-          <SubmitButton type="submit">Log In</SubmitButton>
-          <span>
-            Don't have an account? <Link to="/register">Create One.</Link>
-          </span>
-        </form>
-      </FormContainer>
-      <ToastContainer /> */}
-
+      
       <div className="row registers ">
         <div className="col-md-6">
           <img id="image" src="image\register1.jpg " alt="Login"></img>
@@ -108,6 +83,7 @@ export default function Login() {
                   type="text"
                   placeholder="Username"
                   name="username"
+                  value={values.username}
                   onChange={(e) => handleChange(e)}
                   min="3"
                 />
@@ -115,6 +91,7 @@ export default function Login() {
                   type="password"
                   placeholder="Password"
                   name="password"
+                  value={values.password}
                   onChange={(e) => handleChange(e)}
                 />
                 <SubmitButton type="submit">Log In</SubmitButton>

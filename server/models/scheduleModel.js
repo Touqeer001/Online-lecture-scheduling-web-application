@@ -1,4 +1,6 @@
-const mongoose = require("mongoose");
+
+import mongoose from "mongoose";
+
 
 const ScheduleSchema = new mongoose.Schema({
   course: {
@@ -27,4 +29,5 @@ const ScheduleSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Schedule", ScheduleSchema);
+
+export default mongoose.model("Schedule", ScheduleSchema);

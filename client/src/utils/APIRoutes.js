@@ -1,5 +1,5 @@
-export const host = "http://localhost:8080";
-// export const host = "https://lecture-schedule-module.onrender.com";
+// export const host = "http://localhost:8080";
+export const host = "https://backend-lecture-deploy.onrender.com";
 
 // authentication
 export const registerRoute = `${host}/api/auth/register`;

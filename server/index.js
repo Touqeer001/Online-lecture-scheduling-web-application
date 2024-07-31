@@ -1,8 +1,12 @@
-const express = require("express");
-const cors = require("cors");
+
+import express from "express";
+import cors from "cors";
 const app = express();
-const mongoose = require("mongoose");
-const authRoutes = require("./routes/auth.js");
+import mongoose from "mongoose";
+
+import authRoutes from "./routes/authRoutes.js"
+import courseRoutes from "./routes/courseRoutes.js";
+import scheduleRoutes from "./routes/scheduleRoutes.js"
 
 // Middleware
 app.use(cors());
@@ -39,6 +43,9 @@ mongoose
 
 // Routes
 app.use("/api/auth", authRoutes);
+app.use("/api/auth",courseRoutes);
+app.use("/api/auth", scheduleRoutes);
+
 
 // Root endpoint
 app.get("/", (req, res) => {
