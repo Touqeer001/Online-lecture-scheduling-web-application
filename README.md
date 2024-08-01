@@ -7,7 +7,7 @@ The Online Lecture Scheduling Module Serves the process of scheduling courses an
 
 ## Demo
 
-[Check here to see the presentation video of this project](https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack.git)
+[Check here to see the project](https://online-lecture-scheduling-wep-app.netlify.app)
 <br/>
 
 
